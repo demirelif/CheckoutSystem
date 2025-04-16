@@ -36,7 +36,7 @@ public class PriceListTest {
         SpecialOffer offer1 = new SpecialOffer(3, 20.0);
         priceList.addSpecialOfferToItem("A", offer1);
         Item item = priceList.getItemByName("A");
-        assertEquals( item.getSpecialOffers().getFirst(), offer1);
+        assertEquals( item.getSpecialOffers().get(0), offer1);
     }
 
     @Test
