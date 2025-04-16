@@ -3,22 +3,26 @@
 This is a simple checkout system where you can scan items with predefined prices. It is also possible to add special prices and have discounts. 
 
 ## Installation
-1. Clone the repository
+Clone the repository
   ```bash
 git clone https://github.com/demirelif/CheckoutSystem.git
 ```
-2. Install Java - The project was developed with Java 22; however it is compatible with Java 17.
+Install Java - The project was developed with Java 22; however it is compatible with Java 17.
 
-## Usage 
+## Run 
 Build the project. This project uses Gradle as the building automation tool.
 
 ```bash
 ./gradlew build
 ```
-
-4. Finally, run the project
+Finally, run the project
 ./gradlew run 
 
+## Tests 
+To run the JUnit tests, simply use the following. 
+```bash
+./gradlew test
+```
 ## Features
 
 ### Checkout
