@@ -57,7 +57,7 @@ The table above represents the `PriceList`. Here, you can define pricing rules i
 PriceList priceList = new PriceList();
 priceList.addItem( new Item("A", 80.0));
 ```
-You can also define `SpecialPrice`s for n items as follows. 
+You can also define `SpecialOffer`s for n items as follows. 
 ```java
 SpecialOffer specialOffer = new SpecialOffer( n, specialPrice );
 ```
