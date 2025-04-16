@@ -55,7 +55,7 @@ In this case, the system adds one from `Item A` to the cart.
 The table above represents the `PriceList`. Here, you can define pricing rules including regular prices and discounted prices. 
 ```java
 PriceList priceList = new PriceList();
-priceList.addItem( new Item("A", 80.0));
+priceList.addItem( new Item("A", 80.0) );
 ```
 You can also define `SpecialOffer`s for n items as follows. 
 ```java
