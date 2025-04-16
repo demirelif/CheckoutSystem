@@ -21,7 +21,7 @@ Finally, run the project
 ```
 
 ## Tests 
-To run the JUnit tests, simply use the following. You can see the test report at `build/report/tests/test/index.html`
+To run the JUnit tests, simply use the following. You can see the test report at `build/reports/tests/test/index.html`
 ```bash
 ./gradlew test
 ```
