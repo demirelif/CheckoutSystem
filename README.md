@@ -61,7 +61,7 @@ You can also define `SpecialOffer`s for n items as follows.
 ```java
 SpecialOffer specialOffer = new SpecialOffer( n, specialPrice );
 ```
-To assign any special price to any item, simply use the following method. 
+To assign any special offer to any item, simply use the following method. 
 ```java
 priceList.addSpecialOfferToItem( "A", specialOffer );
 ```
