@@ -28,6 +28,10 @@ In order to scan an item use the following code.
 Checkout checkout = new Checkout( priceList );
 checkout.scan("A");
 ```
+And you can cancel the scan with the following.
+```bash
+checkout.cancelScan("A");
+```
 Here, you only need to name of the item, or a simple char. Checkout system automatically matches this string with its database. 
 For instance, let's assume we have the following price list. Char A corresponds to the Item A. 
 ```bash
@@ -51,5 +55,6 @@ SpecialOffer specialOffer = new SpecialOffer( 3, 220);
 ```
 To assign any special price to any item, simply use the following method. 
 ```bash
-  priceList.addSpecialOfferToItem( "A", specialOffer );
+priceList.addSpecialOfferToItem( "A", specialOffer );
 ```
+You can add multiple special offers for an item. The checkout system will apply the deals from most to least in terms of number of items. 
