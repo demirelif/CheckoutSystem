@@ -4,16 +4,9 @@ public class SpecialOffer {
     private final int amount;
     private final double specialPrice;
 
-    // Constructor
     public SpecialOffer(int amount, double specialPrice) {
         this.amount = amount;
         this.specialPrice = specialPrice;
-    }
-
-    // Copy constructor
-    public SpecialOffer( SpecialOffer originalSpecialOffer) {
-        this.amount = originalSpecialOffer.getAmount();
-        this.specialPrice = originalSpecialOffer.getSpecialPrice();
     }
 
     public int getAmount() {

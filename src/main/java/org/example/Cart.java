@@ -11,7 +11,6 @@ import java.util.HashMap;
 public class Cart {
     private final Map<Item, Integer> items;
 
-    // Constructor
     public Cart() {
         this.items = new HashMap<>();
     }

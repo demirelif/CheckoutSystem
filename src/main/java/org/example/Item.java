@@ -13,23 +13,10 @@ public class Item {
     private final double unitPrice;
     private final List<SpecialOffer> specialOffers;
 
-    // Constructor
     public Item(String itemName, double unitPrice ) {
         this.itemName = itemName;
         this.unitPrice = unitPrice;
         this.specialOffers = new ArrayList<>();
-    }
-
-    // Copy constructor
-    public Item( Item originalItem) {
-        this.itemName = originalItem.getItemName();
-        this.unitPrice = originalItem.getUnitPrice();
-
-        List<SpecialOffer> offersCopy = new ArrayList<>();
-        for ( SpecialOffer specialOffer : originalItem.getSpecialOffers() ) {
-            offersCopy.add( new SpecialOffer(specialOffer) );
-        }
-        this.specialOffers = List.copyOf(offersCopy);
     }
 
     public double getUnitPrice() {

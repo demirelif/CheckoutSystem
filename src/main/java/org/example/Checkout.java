@@ -15,7 +15,6 @@ public class Checkout {
     private final PriceList priceList;
     private final Logger logger = Logger.getAnonymousLogger();
 
-
     public Checkout(PriceList priceList){
         this.priceList = priceList;
     }
