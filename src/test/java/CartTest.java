@@ -24,7 +24,6 @@ public class CartTest {
         cart.put(A);
         cart.put(B);
         cart.put(A);
-
         assertEquals(2, cart.getItems().get(A));
         assertEquals(1, cart.getItems().get(B));
     }

@@ -33,10 +33,21 @@ public class PriceListTest {
 
     @Test
     public void testAddSpecialOffer() {
-        SpecialOffer offer1 = new SpecialOffer(3, 20.0);
-        priceList.addSpecialOfferToItem("A", offer1);
+        SpecialOffer offer = new SpecialOffer(3, 20.0);
+        priceList.addSpecialOfferToItem("A", offer);
         Item item = priceList.getItemByName("A");
-        assertEquals( item.getSpecialOffers().get(0), offer1);
+        assertEquals( item.getSpecialOffers().get(0), offer);
+    }
+
+    @Test
+    public void testAddMultipleSpecialOfferForSingleItem(){
+        SpecialOffer offer1 = new SpecialOffer(3, 25.0);
+        SpecialOffer offer2 = new SpecialOffer(4, 30.0);
+        priceList.addSpecialOfferToItem("A", offer1);
+        priceList.addSpecialOfferToItem("A", offer2);
+        Item item = priceList.getItemByName("A");
+        assertEquals( item.getSpecialOffers().size(), 2);
+        assertEquals( item.getSpecialOffers().get(0), offer2);
     }
 
     @Test

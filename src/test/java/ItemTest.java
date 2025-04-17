@@ -31,8 +31,9 @@ public class ItemTest {
         item.addSpecialOffer(specialOffer1);
         item.addSpecialOffer(specialOffer2);
         item.addSpecialOffer(specialOffer3);
+
         List<SpecialOffer> expected = new ArrayList<>();
-        expected.add(specialOffer3); // 5
+        expected.add(specialOffer3);
         expected.add(specialOffer1);
         expected.add(specialOffer2);
 
